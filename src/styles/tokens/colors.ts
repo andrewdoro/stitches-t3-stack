@@ -26,9 +26,9 @@ export type PaletteTypes = {
   };
 };
 
-import { ThemeTypes } from 'styles/stitches.config';
+import { ThemeTypes } from '../stitches.config';
 
-const themes: { [key in ThemeTypes]: PaletteTypes } = {
+const themes = {
   light: {
     primary: violet,
     secondary: teal,
@@ -82,7 +82,6 @@ const makePalette = (theme: ThemeTypes) => {
     'text-black': blackA.blackA12,
     'text-white': whiteA.whiteA12
   };
-
   const primary = {
     'primary-01': palette.primary.violet1,
     'primary-02': palette.primary.violet2,
