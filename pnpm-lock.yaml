@@ -19,6 +19,7 @@ specifiers:
   '@typescript-eslint/parser': ^5.33.0
   eslint: 8.22.0
   eslint-config-next: 12.3.1
+  eslint-config-prettier: ^8.5.0
   next: 12.3.1
   next-auth: ^4.12.3
   next-themes: ^0.2.1
@@ -58,6 +59,7 @@ devDependencies:
   '@typescript-eslint/parser': 5.40.0_yv3nvntfnealqm77uomj2fi4ki
   eslint: 8.22.0
   eslint-config-next: 12.3.1_yv3nvntfnealqm77uomj2fi4ki
+  eslint-config-prettier: 8.5.0_eslint@8.22.0
   prettier: 2.7.1
   prisma: 4.4.0
   typescript: 4.8.4
@@ -961,6 +963,15 @@ packages:
     transitivePeerDependencies:
       - eslint-import-resolver-webpack
       - supports-color
+    dev: true
+
+  /eslint-config-prettier/8.5.0_eslint@8.22.0:
+    resolution: {integrity: sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==}
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
+    dependencies:
+      eslint: 8.22.0
     dev: true
 
   /eslint-import-resolver-node/0.3.6:
